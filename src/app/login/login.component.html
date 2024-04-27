@@ -1,18 +1,24 @@
 <main>
     <section id="section-login">
-        <h2>Login</h2>
-        <form class="row g-3">
-            
-              <label for="staticUsuario" class="visually-hidden">Usuário</label>
-              <input type="text" class="form-control" id="staticUsuario" placeholder="email@exemplo.com">
-            
-            <br>
-            
-              <label for="inputPassword2" class="visually-hidden">Senha</label>
-              <input type="password" class="form-control" id="inputPassword2" placeholder="senha">
-              <br>
-              <button type="submit" class="btn btn-primary mb-3">Login</button>
-          
+      <h1>Login</h1>
+      <div class="d-flex justify-content-center">
+          <form method="post" action="" id="login">
+              <p>
+                  <label for="usuario">Nome: </label>
+                  <input id="usuario" name="usuario" required="required" type="text"
+                      placeholder="Insira o seu usuário" class="form-control" />
+              </p>
+              <p>
+                  <label for="senha">Senha: </label>
+                  <input id="senha" name="senha" required="required" type="password"
+                      placeholder="Insira a sua senha" class="form-control" />
+              </p>
+              <p>
+                  <input type="button" value="login" class="btn btn-primary" id="bt-login" onclick="login()" />
+              </p>
           </form>
-    </section>
+      </div>
+  </section>
+
 </main>
+<script src="script.js"></script>
